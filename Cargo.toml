@@ -1,0 +1,19 @@
+[package]
+name = "wgpu_playground"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+path = "src/lib.rs"
+
+[[bin]]
+path = "src/main.rs"
+name = "wgpu-playground"
+
+
+[dependencies]
+env_logger = "0.11.5"
+log = "0.4.22"
+tokio = { version = "1.39.3", features = ["macros", "rt", "rt-multi-thread"] }
+wgpu = "22.1.0"
+winit = { version = "0.29", features = ["rwh_05", "rwh_06"] }
